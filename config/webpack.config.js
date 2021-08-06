@@ -409,7 +409,7 @@ module.exports = function (webpackEnv) {
                 ],
                 
                 plugins: [
-                  [
+                  [                   
                     require.resolve('babel-plugin-named-asset-import'),
                     {
                       loaderMap: {
@@ -420,6 +420,7 @@ module.exports = function (webpackEnv) {
                       },
                     },
                   ],
+                  require.resolve('babel-plugin-styled-components'), // supplement to the base styled-components library
                   isEnvDevelopment &&
                     shouldUseReactRefresh &&
                     require.resolve('react-refresh/babel'),
