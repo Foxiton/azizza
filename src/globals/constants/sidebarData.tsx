@@ -7,19 +7,16 @@ export const SidebarData = [
   {
     title: "Home",
     path: "/",
-    icon: <AiIcons.AiFillHome />,
-    cName: "nav-text",
+    icon: <AiIcons.AiFillHome />
   },
   {
     title: "Reports",
     path: "/reports",
-    icon: <IoIcons.IoIosPaper />,
-    cName: "nav-text",
+    icon: <IoIcons.IoIosPaper />
   },
   {
     title: "Products",
     path: "/products",
-    icon: <FaIcons.FaCartPlus />,
-    cName: "nav-text",
+    icon: <FaIcons.FaCartPlus />
   },
 ];

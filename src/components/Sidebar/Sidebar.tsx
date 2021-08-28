@@ -1,6 +1,4 @@
 import React, {useState} from 'react'
-import * as FaIcons from 'react-icons/fa';
-import * as AiIcons from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 
 import { SidebarData } from '../../globals/constants/sidebarData';
@@ -20,7 +18,7 @@ const Sidebar = () => {
           <ul className='nav-menu-items' onClick={showSidebar}>
             {SidebarData.map((item, index) => {
               return (
-                <li key={index} className={item.cName}>
+                <li key={index} className='nav-text'>
                   <Link to={item.path}>
                     {item.icon}
                     <span>{item.title}</span>
