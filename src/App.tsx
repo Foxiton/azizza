@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.scss';
 import Sidebar from './components/Sidebar/Sidebar';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import styled from 'styled-components';
 
 function App() {
@@ -26,7 +26,8 @@ function App() {
           <Title>Hello World!</Title>
         </header>
         <Switch>
-          <Route path='/' exact />
+          <Redirect exact from="/" to="/dashboard" />
+          <Route path='/' />
           <Route path='/reports' />
           <Route path='/products' />
         </Switch>
