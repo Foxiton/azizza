@@ -6,6 +6,8 @@ import { SidebarData } from '../../globals/constants/sidebarData';
 import styled from 'styled-components';
 import './Sidebar.scss';
 
+import logo from "../../assets/treva.png";
+
 
 const Sidebar = () => {
     const [sidebar, setSidebar] = useState(false);
@@ -15,6 +17,9 @@ const Sidebar = () => {
     return (
         <>
         <nav className={'nav-menu active'}>
+          {/* <Link to='/'> */}
+            <img src={logo} alt='Company Logo' className='nav-logo'/>
+          {/* </Link> */}
           <ul className='nav-menu-items' onClick={showSidebar}>
             {SidebarData.map((item, index) => {
               return (
