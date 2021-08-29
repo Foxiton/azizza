@@ -3,6 +3,7 @@ import { addDecorator } from "@storybook/react";
 import { MemoryRouter } from "react-router";
 
 import '../src/styles/variables.scss';
+import '../src/styles/fonts.scss';
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
