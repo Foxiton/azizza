@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 
 import Sidebar from './components/Sidebar/Sidebar';
+import RightSidebar from './components/RightSidebar/RightSidebar';
 import Dashboard  from "./screens/Dashboard/Dashboard";
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
             <Route path='/settings' />
           </Switch>
         </main>
-        <Sidebar/>
+        <RightSidebar/>
       </Router>
     </div>
   );
