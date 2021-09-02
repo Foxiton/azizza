@@ -9,12 +9,16 @@ $ColorEmeraldDFocus: darken($ColorEmerald, 10%);
 $ColorHotPink: #EF3B6A;
 $ColorHotOrange: #F4554B;
 $ColorWhite: #ffffff;
-$ColorEmeraldDFocus1: #18442a;
+$ColorOffWhite: #F6F9F8;
 
 
 :root {
+    /*
+     * Color variables
+     */
     --color-cloud: #ecf0f1;
     --color-white: #{$ColorWhite};
+    --color-offwhite: #{$ColorOffWhite};
     --color-emerald: #{$ColorEmerald};
     --color-emerald-dark-focus: #{$ColorEmeraldDFocus};
     --color-nephritis: #27ae60;
@@ -22,5 +26,11 @@ $ColorEmeraldDFocus1: #18442a;
     --color-midnightblue: #2c3e50;    
     --color-hot-pink: #{$ColorHotPink};
     --color-hot-orange: #{$ColorHotOrange};
+
+    /*
+     * Spacing variables
+     */
+    --margin-main-content-wrapper: 15px;
+    --borderRadius-main-content-wrapper: 25px;
 }
 
