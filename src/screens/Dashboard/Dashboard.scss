@@ -14,22 +14,21 @@
 }
 
 .App-header {
-  background-color: var(--color-white);
-  min-height: calc(100vh - var(--margin-main-content-wrapper));
-  font-size: calc(10px + 2vmin);
-  color: #282c34;
+  // background-color: var(--color-white);
+  // min-height: calc(100vh - var(--margin-main-content-wrapper));
 }
 
 .app-main-content-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   height: calc(100vh - (var(--margin-main-content-wrapper) * 2 ));
   background-color: var(--color-offwhite);
   margin: var(--margin-main-content-wrapper) 0;
   border-radius: var(--borderRadius-main-content-wrapper);
   overflow: auto;
+  font-size: calc(10px + 2vmin);
+  color: #282c34;
 }
 
 .App-link {
