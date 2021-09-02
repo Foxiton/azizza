@@ -9,3 +9,37 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.scrollable {
+  -webkit-mask-image: linear-gradient(to top, transparent, black),
+    linear-gradient(to left, transparent 5px, black 5px);
+  -webkit-mask-size: 100% 20000px;
+  -webkit-mask-position: left bottom;
+  transition: mask-position 0.3s;
+
+  &:hover {
+    -webkit-mask-position: left top;
+  }
+
+  &::-webkit-scrollbar {
+    width: 5px;
+    margin-top: 50px; 
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: darkgrey;
+  }
+
+  &::-webkit-scrollbar-thumb, &::-webkit-scrollbar-track {
+    border-radius: 10px;
+    margin: 30px 0;
+  }
+}
+
+.app {
+  display: flex;
+}
+
+.main-container {
+  flex: 1;
+}
