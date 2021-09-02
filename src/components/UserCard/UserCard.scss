@@ -1,0 +1,84 @@
+.usercard-wrapper {
+  // font-family: 'AcuminPro Light';
+}
+
+.nav-menu {
+  background-color: var(--color-white);
+  width: 250px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // position: fixed;
+  // top: 0;
+  // left: -100%;
+  font-family: 'AcuminPro Light';
+
+  // &.active {
+  //     left: 0;
+  // }
+}
+
+.nav-logo {
+  height: 50px;
+  margin-top: 28px;
+}
+
+.nav-text {
+  display: flex;
+  // justify-content: start;
+  // align-items: center;
+  padding: 8px 0px 8px 32px;
+  list-style: none;
+  height: 60px;
+}
+
+.nav-text a {
+  text-decoration: none;
+  color: var(--color-midnightblue);
+  font-size: 18px;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  border-radius: 40px 0 0 40px;
+  transition: 450ms;
+}
+
+.nav-text a:hover {
+  background-color: var(--color-emerald);
+  color: var(--color-white);
+  transition: 350ms;
+}
+
+.nav-menu-items {
+  width: 100%;
+  height: 85%;
+  padding: 0;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+span {
+  margin-left: 16px;
+}
+
+.sidebar-bottom {
+  margin-top: auto;
+  padding: 8px 32px;
+}
+
+.sidebar-bottom a {
+  border-radius: 40px;
+  background-color: var(--color-emerald);
+  color: var(--color-white);
+  padding: 0px 42px;
+  // transition: 200ms;
+  transition: 0.25s;
+  &:hover {
+    background-color: var(--color-hot-orange);
+    box-shadow: inset 4em 0.25em 3em 0 var(--color-hot-pink);
+  }
+}
