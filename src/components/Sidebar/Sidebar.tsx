@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { Link } from 'react-router-dom';
 
 import { SidebarData } from '../../globals/constants/sidebarData';
@@ -30,4 +32,4 @@ const Sidebar = () => {
     )
 }
 
-export default Sidebar;
+export default React.memo(Sidebar);
