@@ -1,0 +1,45 @@
+.cardContainer {
+    background: palevioletred;
+    height: 50px;
+    width: 20px;
+}
+
+.scheduleCard-container {
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    min-height: 70px;    
+    border: 1px solid rgba(darkgrey, 0.2);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+    transition: 500ms;
+    cursor: pointer;
+
+    &:hover {
+        background-color: lighten(darkgrey, 30);
+        border: 1px solid lighten(darkgrey, 30);
+    }
+}
+
+.scheduleCard-info-container {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    h3, span {
+        margin: 0;
+        flex: 1;
+    }
+    span {
+        font-size: 12px;
+        color: darkgrey;
+        display: flex;
+        align-items: center;
+    }
+    h3 {
+        font-family: 'AcuminPro Bold';
+    }
+    .scheduleCard-icon-calender {
+        margin-right: 5px;
+    }
+}
