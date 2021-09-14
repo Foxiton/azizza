@@ -33,5 +33,7 @@ $ColorOffWhite: #F6F9F8;
     --margin-top-app: 28px;
     --margin-main-content-wrapper: 15px;
     --borderRadius-main-content-wrapper: 25px;
+    --margin-vertical-main-app-content-container: 15px;
+    --margin-horizontal-main-app-content-container: calc(var(--margin-vertical-main-app-content-container) * 2)
 }
 
