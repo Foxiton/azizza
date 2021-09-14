@@ -15,17 +15,15 @@ const Template: ComponentStory<typeof Card> = args => <Card {...args}/>;
 
 export const Default = Template.bind({});
 Default.args = {
-  size: {
-    width: '200px',
-    height: '300px'
-  }
+  width: '200px',
+  height: '300px',
+  title: "Test 123"
 };
 
 export const ImageTemplate = Template.bind({});
 ImageTemplate.args = {
-  background: './panda.png', //uri
-  size: {
-    width: '200px',
-    height: '300px'
-  }
+  background: './panda.png', //uri  
+  width: '200px',
+  height: '300px',
+  title: "Test 123"
 };
