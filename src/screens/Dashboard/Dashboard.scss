@@ -19,9 +19,9 @@
 }
 
 .app-main-content-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
   height: calc(100vh - (var(--margin-main-content-wrapper) * 2 ));
   background-color: var(--color-offwhite);
   margin: var(--margin-main-content-wrapper) 0;
@@ -30,6 +30,12 @@
   // font-size: calc(10px + 2vmin);
   font-size: 25px;
   color: #282c34;
+}
+
+.main-app-content-container{
+  width: calc(100% - 60px);
+  text-align: center;
+  margin: 30px;
 }
 
 .App-link {

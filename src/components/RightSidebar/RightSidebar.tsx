@@ -17,7 +17,7 @@ const RightSidebar = () => {
         <aside className='right-sidebar'>
           <UserCard/>
           <h2 className="title-schedule">My Schedule</h2>
-          <div className="schedule-container">
+          <div className="schedule-container scrollable">
             {ScheduleData.map((item,index) => {
               return (
                 <ScheduleCard key={index} background={item.img} title={item.title} scheduledDates={item.dates}/>

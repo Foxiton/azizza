@@ -13,6 +13,7 @@
 .schedule-container {
   flex: 1;
   min-height: calc(102px*3);
+  overflow: scroll;
 }
 
 .title-schedule {
