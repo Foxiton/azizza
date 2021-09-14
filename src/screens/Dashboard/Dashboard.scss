@@ -1,7 +1,3 @@
-.App {
-  text-align: center;
-}
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -13,15 +9,7 @@
   }
 }
 
-.App-header {
-  // background-color: var(--color-white);
-  // min-height: calc(100vh - var(--margin-main-content-wrapper));
-}
-
 .app-main-content-wrapper {
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
   height: calc(100vh - (var(--margin-main-content-wrapper) * 2 ));
   background-color: var(--color-offwhite);
   margin: var(--margin-main-content-wrapper) 0;
@@ -33,9 +21,92 @@
 }
 
 .main-app-content-container{
-  width: calc(100% - 60px);
-  text-align: center;
-  margin: 30px;
+  width: calc(100% - (var(--margin-horizontal-main-app-content-container) * 2));
+  margin: var(--margin-vertical-main-app-content-container) var(--margin-horizontal-main-app-content-container);
+
+  header {
+    display: flex;
+    align-items: center;
+
+    div {
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
+    .search-icon {
+      margin-left: 10px;
+      position: absolute;
+    }
+
+    input {
+      border-radius: 20px;
+      height: 40px;
+      border: none;
+      padding: 0 20px 0 35px;
+      margin-right: 15px;
+      color: darkgray;
+      &:focus {
+        outline: none;
+      }
+
+    &::placeholder {
+      color: darkgray;
+    }
+    }
+
+    .notification-icon-wrapper {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      background-color: white;
+      color: inherit;
+      border: none;
+      padding: 0;
+      font: inherit;
+      cursor: pointer;
+      outline: inherit;
+      svg {
+        height: 40px;        
+      }
+    }
+
+    h1 {
+      font-size: 35px;
+      margin: 0;
+      text-align: left;
+      flex: 1;
+    }
+  }  
+}
+
+.badge::after {
+  content: '';
+  background-color: red;
+  height: 12px;                  
+  width: 12px;
+  display: inline;
+  position: absolute;
+  border-radius: 50%;
+  transform: translate(-15px, 6px);
+}
+
+.welcome-text {
+  color: darkgrey;
+  font-size: 18px;
+}
+
+.destination-suggestion-container {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+  flex-wrap: nowrap;
+  width: 61.2vw;
+  overflow: scroll;
+}
+
+.grid-test {
+  display: grid;
 }
 
 .App-link {
@@ -48,5 +119,23 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 1920px) {
+  .destination-suggestion-container {
+    width: 69.3vw;        
+  }
+}
+
+@media only screen and (max-width: 1540px) {
+  .destination-suggestion-container {
+    width: 61.2vw;        
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .destination-suggestion-container {
+    width: 54vw;        
   }
 }
