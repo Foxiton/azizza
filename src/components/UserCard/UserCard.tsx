@@ -13,8 +13,8 @@ const UserCard = () => {
       <div className="userCard-wrapper">
         <img className="user-avatar" src={earth} alt="User Image"/>
         <div className="user-info">
-          <p className="userinfo-lable">Jeremy Zuck</p>
-          <p className="userinfo-lable">Travel Enthusiast</p>
+          <p className="userinfo-lable-name">Jeremy Zuck</p>
+          <p className="userinfo-lable-description">Travel Enthusiast</p>
         </div>
       </div>
     )

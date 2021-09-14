@@ -14,7 +14,18 @@
   flex-direction: column;
 }
 
-.userinfo-lable { 
+.userinfo-lable-name, .userinfo-lable-description { 
   margin: 0;
   flex: 1;
+}
+
+.userinfo-lable-name {  
+  font-family: 'AcuminPro Bold';
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+.userinfo-lable-description {
+  color: darkgrey;
+  letter-spacing: 1px;
 }
