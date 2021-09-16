@@ -101,7 +101,8 @@
   gap: 15px;
   margin-top: 15px;
   flex-wrap: nowrap;
-  width: 61.2vw;
+  // width: 61.2vw;
+  width: 0;
   overflow: scroll;
 }
 
@@ -122,20 +123,20 @@
   }
 }
 
-@media only screen and (max-width: 1920px) {
-  .destination-suggestion-container {
-    width: 69.3vw;        
-  }
-}
+// @media only screen and (max-width: 1920px) {
+//   .destination-suggestion-container {
+//     width: 69.3vw;        
+//   }
+// }
 
-@media only screen and (max-width: 1540px) {
-  .destination-suggestion-container {
-    width: 61.2vw;        
-  }
-}
+// @media only screen and (max-width: 1540px) {
+//   .destination-suggestion-container {
+//     width: 61.2vw;        
+//   }
+// }
 
-@media only screen and (max-width: 1280px) {
-  .destination-suggestion-container {
-    width: 54vw;        
-  }
-}
+// @media only screen and (max-width: 1280px) {
+//   .destination-suggestion-container {
+//     width: 54vw;        
+//   }
+// }
