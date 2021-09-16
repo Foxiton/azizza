@@ -1,7 +1,5 @@
 import React from 'react';
 
-import { Link } from 'react-router-dom';
-
 import { ScheduleData } from '../../globals/constants/sidebarData';
 
 import UserCard from "../UserCard/UserCard";
