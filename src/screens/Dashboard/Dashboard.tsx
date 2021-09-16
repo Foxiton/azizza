@@ -15,6 +15,7 @@ function App() {
   const appContainerRef: React.RefObject<HTMLDivElement> = useRef(null);
 
   const [appContainerWidth, setAppContainerWidth] = useState<number | undefined>(0);
+  const [showNotificationMenu, setShowNotificationMenu] = useState(false);
 
   const resizeHandler = useDebouncedCallback(() => {
     setAppContainerWidth(0);
@@ -29,18 +30,33 @@ function App() {
     })
   }, [resizeHandler]);
 
+  const toggleNotification = (event: React.MouseEvent<HTMLButtonElement>) => {
+    event.preventDefault();
+    setShowNotificationMenu(!showNotificationMenu);
+  }
+
   return (
       <div className="app-main-content-wrapper scrollable">
         <div className="main-app-content-container" ref={appContainerRef}>
           <header>
             <h1>Hello, Jeremy! 👋</h1>
-            <div>
+            <div className="searchbar-wrapper">
               <FiIcons.FiSearch className="search-icon" size="20px" color="darkgrey"/>
-              <input placeholder="Search Destination..." type="text" />
+              <input className="glow" placeholder="Search Destination..." type="text" />
             </div>
-            <button className="notification-icon-wrapper badge">
-              <IoIcons.IoIosNotificationsOutline />
-            </button>
+            <div> 
+              <button className="notification-icon-wrapper badge glow" onClick={toggleNotification}>
+                <IoIcons.IoIosNotificationsOutline />
+              </button>
+              {showNotificationMenu ? (<div className="notification-menu">
+                <button> Menu item 1 </button>
+                <button> Menu item 2 </button>
+                <button> Menu item 3 </button>
+                <button> Menu item 4 </button>
+                <button> Menu item 5 </button>
+                <button> Menu item 6 </button>
+              </div>) : null}
+            </div>
           </header>
           <p className="welcome-text">Welcome back and explore the world</p>
           <DestSuggestionWrapper
