@@ -49,12 +49,12 @@ function App() {
                 <IoIcons.IoIosNotificationsOutline />
               </button>
               {showNotificationMenu ? (<div className="notification-menu">
-                <button> Menu item 1 </button>
+                {/* <button> Menu item 1 </button>
                 <button> Menu item 2 </button>
                 <button> Menu item 3 </button>
                 <button> Menu item 4 </button>
                 <button> Menu item 5 </button>
-                <button> Menu item 6 </button>
+                <button> Menu item 6 </button> */}
               </div>) : null}
             </div>
           </header>
