@@ -7,7 +7,7 @@ import * as FiIcons from "react-icons/fi";
 
 import { destinationSuggestions } from '../../globals/constants/dashboardData';
 import { LargeCard } from '../../components/Card/Card';
-import imageOnTop from '../../assets/onTop.jpg'
+// import imageOnTop from '../../assets/onTop.jpg'
 import './Dashboard.scss';
 
 
@@ -65,7 +65,7 @@ function App() {
             >
               {
                 destinationSuggestions.map((item, index) => (
-                  <LargeCard key={index} background={imageOnTop} title={item.title} place={item.place}/>                  
+                  <LargeCard key={index} background={item.img} title={item.title} place={item.place}/>                  
                 ))
               }
           </DestSuggestionWrapper>
