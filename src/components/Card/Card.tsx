@@ -57,7 +57,7 @@ const LargeCardWrapper = styled.div.attrs((props: any) => ({
     width: props.width || "90px",
     height: props.height || "150px"
 }))`
-    background: black;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(22,22,22,1) 28%, rgba(247,247,247,0) 100%);
     height: ${props => props.height};
     width: ${props => props.width};
     border-radius: 10px;
