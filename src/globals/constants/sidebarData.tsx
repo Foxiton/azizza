@@ -3,6 +3,9 @@ import * as AiIcons from "react-icons/ai";
 import * as IoIcons from "react-icons/io";
 
 import imageValley from '../../assets/valley.jpg';
+import imageValleyGround from '../../assets/valleyGround.jpg';
+import imageTopOfTheWorld from '../../assets/topOfTheWorld.jpg';
+import imageRelax from '../../assets/relax.jpg';
 
 export const SidebarData = [
   {
@@ -42,16 +45,16 @@ export const ScheduleData = [
   {
     title: "Valley",
     dates: "22 June - 26 June",
-    img: imageValley
+    img: imageValleyGround
   },
   {
     title: "Tartaruga Camp",
     dates: "1 July - 7 July",
-    img: imageValley
+    img: imageTopOfTheWorld
   },
   {
     title: "Gioc Waterfall",
     dates: "11 July - 15 July",
-    img: imageValley
+    img: imageRelax
   }
 ]
