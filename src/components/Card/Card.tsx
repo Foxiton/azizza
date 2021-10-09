@@ -21,12 +21,13 @@ const Card = ({background, width, height, title, place}: ICardProps) => {
 
 export const LargeCard = ({background, title, place}: ICardProps) => {
     return (
-        <CardContainer width="180px" height="260px" background={background} className="large-card">
+        <LargeCardWrapper width="180px" height="260px">
+        <CardContainer width="180px" height="260px" background={background} className="large-card" />
             <CardDesc>
                 <Title>{title}</Title>
                 <Description><Io5Icons.IoLocationOutline className="icon-location"/> {place}</Description>
-            </CardDesc>       
-        </CardContainer>
+            </CardDesc>
+        </LargeCardWrapper>
     )
 }
 
@@ -34,6 +35,8 @@ const CardDesc = styled.div`
     align-self: end;
     margin-left: 10px;
     margin-bottom: 8px;
+    position: relative;
+    bottom: 50px;
 `;
 
 const Title = styled.h3`
@@ -49,6 +52,16 @@ const Description = styled.p`
   display: flex;
   align-items: center;
 `;
+
+const LargeCardWrapper = styled.div.attrs((props: any) => ({
+    width: props.width || "90px",
+    height: props.height || "150px"
+}))`
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(22,22,22,1) 28%, rgba(247,247,247,0) 100%);
+    height: ${props => props.height};
+    width: ${props => props.width};
+    border-radius: 10px;
+`
 
 const CardContainer = styled.div.attrs((props: any) => ({
     width: props.width || "90px",
@@ -66,6 +79,7 @@ const CardContainer = styled.div.attrs((props: any) => ({
     background-size: cover;
     cursor: pointer;
     display: flex;
+    opacity: 0.7;
 `;
 
 export default Card;

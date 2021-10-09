@@ -16,7 +16,9 @@ interface ICardProps {
 const ScheduleCard = ({background, size, title, scheduledDates}: ICardProps) => {
     return (
         <div className="scheduleCard-container">
+            <div style={{backgroundColor: 'grey', borderRadius: '10px'}}>
             <CardContainer width={size?.width} height={size?.height} background={background} />
+            </div>
             <div className="scheduleCard-info-container">
                 <h3>{title}</h3>
                 <span><IoIcons.IoMdCalendar className="scheduleCard-icon-calender" />{scheduledDates}</span>
@@ -39,6 +41,7 @@ const CardContainer = styled.div.attrs((props: any) => ({
     background-image: url(${props => props.background});
     background-position: center;
     background-size: cover;
+    opacity: 0.9;
 `;
 
 export default ScheduleCard;

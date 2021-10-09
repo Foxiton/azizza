@@ -7,7 +7,7 @@ import * as FiIcons from "react-icons/fi";
 
 import { destinationSuggestions } from '../../globals/constants/dashboardData';
 import { LargeCard } from '../../components/Card/Card';
-import imageOnTop from '../../assets/onTop.jpg'
+// import imageOnTop from '../../assets/onTop.jpg'
 import './Dashboard.scss';
 
 
@@ -49,12 +49,12 @@ function App() {
                 <IoIcons.IoIosNotificationsOutline />
               </button>
               {showNotificationMenu ? (<div className="notification-menu">
-                <button> Menu item 1 </button>
+                {/* <button> Menu item 1 </button>
                 <button> Menu item 2 </button>
                 <button> Menu item 3 </button>
                 <button> Menu item 4 </button>
                 <button> Menu item 5 </button>
-                <button> Menu item 6 </button>
+                <button> Menu item 6 </button> */}
               </div>) : null}
             </div>
           </header>
@@ -65,7 +65,7 @@ function App() {
             >
               {
                 destinationSuggestions.map((item, index) => (
-                  <LargeCard key={index} background={imageOnTop} title={item.title} place={item.place}/>                  
+                  <LargeCard key={index} background={item.img} title={item.title} place={item.place}/>                  
                 ))
               }
           </DestSuggestionWrapper>
